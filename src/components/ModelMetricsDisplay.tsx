@@ -484,8 +484,8 @@ export const ModelMetricsDisplay: React.FC = () => {
                       <p>• Mesure la capacité du modèle à distinguer entre les classes</p>
                       <p>• Valeur entre 0 et 1 (1 = discrimination parfaite)</p>
                       <p>• Insensible au déséquilibre des classes</p>
-                      <p>• ROC-AUC > 0.9 = Excellent</p>
-                      <p>• ROC-AUC > 0.8 = Bon</p>
+                      <p>• ROC-AUC &gt; 0.9 = Excellent</p>
+                      <p>• ROC-AUC &gt; 0.8 = Bon</p>
                     </div>
                   </div>
 
@@ -497,7 +497,7 @@ export const ModelMetricsDisplay: React.FC = () => {
                       <p>• Plus sensible aux classes minoritaires</p>
                       <p>• Utile pour les datasets déséquilibrés</p>
                       <p>• Complément important au ROC-AUC</p>
-                      <p>• AUC > 0.95 = Performance excellente</p>
+                      <p>• AUC &gt; 0.95 = Performance excellente</p>
                     </div>
                   </div>
                 </div>
