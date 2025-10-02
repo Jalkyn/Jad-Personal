@@ -32,7 +32,7 @@ export interface ModelMetrics {
 }
 
 export interface ModelHyperparameters {
-  [key: string]: number | string;
+  [key: string]: number | string | boolean;
 }
 
 export interface MLModel {
