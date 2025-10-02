@@ -1,0 +1,4 @@
+koi_score,planet_density_proxy,koi_model_snr,koi_fpflag_ss,koi_prad,koi_duration_err1,habitability_index,duration_period_ratio,koi_fpflag_co,koi_prad_err1,koi_time0bk_err1,koi_period,koi_steff_err2,koi_steff_err1,koi_period_err1,koi_depth,koi_fpflag_nt,koi_impact,koi_slogg_err2,koi_insol
+0.846,4.2,35.7,0,2.26,0.25,0.73,0.312,0,0.18,0.00034,9.488036,-84,81,0.000027,464.37,0,0.146,-0.054,93.59
+0.692,1.8,16.6,0,4.89,0.41,0.45,0.083,0,0.38,0.00089,54.418835,-97,95,0.000134,874.8,0,0.586,-0.062,18.58
+0.523,2.1,10.5,0,0.87,0.15,0.35,0.089,0,0.12,0.00056,19.899138,-73,69,0.000087,10.68,0,0.969,-0.048,18.58
