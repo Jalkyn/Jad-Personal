@@ -8,7 +8,7 @@ import { Badge } from './ui/badge';
 import { Loader2, Rocket, Info, Upload, Download } from 'lucide-react';
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from './ui/tooltip';
 import { ExoplanetFeatures, FEATURE_DESCRIPTIONS, MLModel, PredictionResult, PREDICTION_LABELS } from '../types/exoplanet';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 import { CSVUploadHelp } from './CSVUploadHelp';
 
 interface FeatureInputFormProps {

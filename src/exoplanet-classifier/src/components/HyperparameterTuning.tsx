@@ -46,7 +46,7 @@ export const HyperparameterTuning: React.FC = () => {
     };
 
     try {
-      const result = await tuningService.trainCustomModel(config, (progress) => {
+      const result = await tuningService.trainCustomModel(config, (progress: number) => {
         setTrainingProgress(progress);
       });
       
@@ -75,7 +75,7 @@ export const HyperparameterTuning: React.FC = () => {
     
     // Nettoyer les modèles personnalisés du service de prédiction
     const customModels = predictionService.getCustomModels();
-    customModels.forEach(model => {
+    customModels.forEach((model: any) => {
       predictionService.removeCustomModel(model.modelId);
     });
   };
@@ -339,12 +339,12 @@ export const HyperparameterTuning: React.FC = () => {
                 <div className="font-medium">Candidat</div>
                 <div className="font-medium">Confirmé</div>
                 
-                {trainingResult.metrics.confusion_matrix.map((row, i) => (
+                {trainingResult.metrics.confusion_matrix.map((row: number[], i: number) => (
                   <React.Fragment key={i}>
                     <div className="font-medium py-2">
                       {['Faux Positif', 'Candidat', 'Confirmé'][i]}
                     </div>
-                    {row.map((value, j) => (
+                    {row.map((value: number, j: number) => (
                       <div
                         key={j}
                         className={`p-3 rounded text-sm ${

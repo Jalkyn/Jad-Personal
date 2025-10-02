@@ -1,24 +1,24 @@
 export interface ExoplanetFeatures {
-  koi_period: number;
-  koi_time0bk: number;
-  koi_impact: number;
-  koi_duration: number;
-  koi_depth: number;
-  koi_prad: number;
-  koi_teq: number;
-  koi_insol: number;
+  koi_score: number;
+  planet_density_proxy: number;
   koi_model_snr: number;
-  koi_tce_plnt_num: number;
-  koi_steff: number;
-  koi_slogg: number;
-  koi_srad: number;
-  ra: number;
-  dec: number;
-  koi_kepmag: number;
-  koi_gmag: number;
-  koi_rmag: number;
-  koi_imag: number;
-  koi_zmag: number;
+  koi_fpflag_ss: number;
+  koi_prad: number;
+  koi_duration_err1: number;
+  habitability_index: number;
+  duration_period_ratio: number;
+  koi_fpflag_co: number;
+  koi_prad_err1: number;
+  koi_time0bk_err1: number;
+  koi_period: number;
+  koi_steff_err2: number;
+  koi_steff_err1: number;
+  koi_period_err1: number;
+  koi_depth: number;
+  koi_fpflag_nt: number;
+  koi_impact: number;
+  koi_slogg_err2: number;
+  koi_insol: number;
 }
 
 export interface ModelMetrics {
@@ -53,26 +53,26 @@ export interface PredictionResult {
 }
 
 export const FEATURE_DESCRIPTIONS: Record<keyof ExoplanetFeatures, string> = {
-  koi_period: "Orbital Period (days)",
-  koi_time0bk: "Transit Epoch (BJD-2454900)",
+  koi_score: "Detection Score [0–1]",
+  planet_density_proxy: "Planet Density (proxy) [g/cm³]",
+  koi_model_snr: "Transit SNR",
+  koi_fpflag_ss: "FP Flag (Stellar Variability) [0/1]",
+  koi_prad: "Planet Radius [Earth radii (R⊕)]",
+  koi_duration_err1: "Transit Duration Error (+) [hours]",
+  habitability_index: "Habitability Index",
+  duration_period_ratio: "Duration/Period Ratio",
+  koi_fpflag_co: "FP Flag (Contamination) [0/1]",
+  koi_prad_err1: "Planet Radius Error (+) [Earth radii (R⊕)]",
+  koi_time0bk_err1: "Transit Epoch Error (+) [days]",
+  koi_period: "Orbital Period [days]",
+  koi_steff_err2: "Stellar Temp Error (–) [K]",
+  koi_steff_err1: "Stellar Temp Error (+) [K]",
+  koi_period_err1: "Orbital Period Error (+) [days]",
+  koi_depth: "Transit Depth [ppm]",
+  koi_fpflag_nt: "FP Flag (Non-Transit) [0/1]",
   koi_impact: "Impact Parameter",
-  koi_duration: "Transit Duration (hours)",
-  koi_depth: "Transit Depth (ppm)",
-  koi_prad: "Planetary Radius (Earth radii)",
-  koi_teq: "Equilibrium Temperature (K)",
-  koi_insol: "Insolation Flux (Earth flux)",
-  koi_model_snr: "Transit Signal-to-Noise",
-  koi_tce_plnt_num: "TCE Planet Number",
-  koi_steff: "Stellar Effective Temperature (K)",
-  koi_slogg: "Stellar Surface Gravity (log10(cm/s^2))",
-  koi_srad: "Stellar Radius (Solar radii)",
-  ra: "Right Ascension (degrees)",
-  dec: "Declination (degrees)",
-  koi_kepmag: "Kepler Magnitude",
-  koi_gmag: "g-band Magnitude",
-  koi_rmag: "r-band Magnitude",
-  koi_imag: "i-band Magnitude",
-  koi_zmag: "z-band Magnitude"
+  koi_slogg_err2: "log(g) Error (–) [log(cm/s²)]",
+  koi_insol: "Insolation Flux [Earth flux (S⊕)]"
 };
 
 export const PREDICTION_LABELS = {

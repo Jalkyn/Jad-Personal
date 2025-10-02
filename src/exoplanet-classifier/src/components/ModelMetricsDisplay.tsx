@@ -5,7 +5,7 @@ import { Badge } from './ui/badge';
 import { Button } from './ui/button';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from './ui/select';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, LineChart, Line } from 'recharts';
-import { Download, Refresh, Info, RotateCcw } from 'lucide-react';
+import { Download, RefreshCw, Info, RotateCcw } from 'lucide-react';
 import PredictionService from '../utils/predictionService';
 
 interface ModelMetrics {
@@ -161,7 +161,7 @@ export const ModelMetricsDisplay: React.FC = () => {
             Défaut
           </Button>
           <Button variant="outline" onClick={refreshMetrics}>
-            <Refresh className="w-4 h-4 mr-2" />
+                <RefreshCw className="w-4 h-4 mr-2" />
             Actualiser
           </Button>
           <Button variant="outline" onClick={exportMetrics}>

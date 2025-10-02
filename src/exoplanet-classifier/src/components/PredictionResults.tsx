@@ -4,7 +4,7 @@ import { Button } from './ui/button';
 import { Badge } from './ui/badge';
 import { CheckCircle, XCircle, HelpCircle, Clock, Target, Trash2 } from 'lucide-react';
 import { PredictionResult, PREDICTION_LABELS } from '../types/exoplanet';
-import { toast } from 'sonner@2.0.3';
+import { toast } from 'sonner';
 
 interface PredictionResultsProps {
   predictions: PredictionResult[];
